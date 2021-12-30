@@ -1,0 +1,71 @@
+h1 {
+    color: crimson;
+} 
+
+h2 {
+    margin-top: -10px;
+    color: crimson;
+}
+
+body {
+    align-items: center;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-bottom: 10px;
+    box-shadow: grey;
+}
+
+#gameboard {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor: pointer;
+    color: crimson;
+}
+
+#game-over {
+    border: grey 3px solid;
+    text-align: center;
+    margin-top: 40px;
+    width: 300%;
+}
+
+.bottom-border {
+    border-bottom: 0.2em solid grey;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.right-border {
+    border-right: 0.2em solid grey;
+}
+
+.tile {
+    align-items: center;
+    color: crimson;
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+}
+
+/*
+.x-hover:hover::after {
+    content: "X";
+}
+
+.o-hover:hover::after {
+    content: "O";
+}
+*/
+
+
