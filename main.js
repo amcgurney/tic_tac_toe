@@ -1,4 +1,5 @@
-
+// Try as I may I could not get this pesky reset button to work! 
+//Cleaned code up best U could, robably something realtively small, would love some insight
 
 
 const tiles = document.querySelectorAll(".tile");
@@ -34,7 +35,6 @@ tiles.forEach((tile) => tile.addEventListener("click" , tileClick));
 function tileClick(event) {
     
     const tile = event.target;
-    const tileNumber = tile.dataset.index;
     console.log(tile);
     if(turn === player_X) {
         tile.innerText = player_X;
@@ -73,26 +73,19 @@ function checkWinner() {
 }
 
  function resetGame() {
-    //document.getElementById("reset").addEventListener("click", location.reload());
-    document.getElementById("reset").onclick = function() {
+    const resetGame = document.getElementById("reset")//.onclick = location.reload() 
         document.querySelectorAll("tile").value = "";
 
         console.log('this is doing something');
       };
-    
-    
-    // for (let i = 0; i <tiles.length; i++) {
-        // buttonId = "reset" + i;
-        // document.getElementById(reset).value = "";
-        // location.reload();
-        //tiles = [];
-    };
+    ;
     
  
 
  
-//this is from stackoverflow for reference
-    //function reset(){
+//this is from stackoverflow for reference//
+    
+//function reset(){
   //      rounds = 0;
     //    userScore = 0;
     //    computerScore = 0;
@@ -102,3 +95,12 @@ function checkWinner() {
      //   computerScore_span.innerHTML = '0'
      //   userScore_span.innerHTML = '0'
       //}
+
+// git hub reset button ref//
+
+// function resetGame() {
+//     guessCount = 1;
+//     const resetParas = document.querySelectorAll('.resultParas p');
+//     for (const resetPara of resetParas) {
+//       resetPara.textContent = '';
+//     }
