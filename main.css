@@ -38,10 +38,6 @@ button {
     border-bottom: 0.2em solid grey;
 }
 
-.hidden {
-    display: none;
-}
-
 .visible {
     display: block;
 }
