@@ -1,5 +1,5 @@
 // Try as I may I could not get this pesky reset button to work! 
-//Cleaned code up best U could, robably something realtively small, would love some insight
+//Cleaned code up best I could, probably something realtively small, would love some insight
 
 
 const tiles = document.querySelectorAll(".tile");
@@ -35,7 +35,7 @@ tiles.forEach((tile) => tile.addEventListener("click" , tileClick));
 function tileClick(event) {
     
     const tile = event.target;
-    console.log(tile);
+    //console.log(tile);
     if(turn === player_X) {
         tile.innerText = player_X;
         turn = player_O;
